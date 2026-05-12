@@ -1,0 +1,104 @@
+:root{
+    --color-black: #1E212B;
+  --color-grey: #887880;
+  --color-white: #FFFBFC;
+  --color-green: #739E82;
+  --color-red: #D72638;
+
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#mainContainer{
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  padding-bottom: 10px;
+  background-color: var(--color-black);
+  border-radius: 1em;
+  height: 96%;
+  top: 2%;
+}
+
+#buttonContainer{
+  margin: 5px;
+  background-color: var(--color-black);
+}
+
+
+
+ul
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style:none;
+  padding-left: 0% !important;
+}
+
+#buttonList{
+
+  align-items: center;
+}
+
+.pictureButton{
+  width: 12.5em;
+  height: 12.5em;
+  background-color: var(--color-white);
+  overflow: hidden;
+  padding: 0;
+  object-fit: contain;
+  position: relative;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.selectedPip{
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  padding-bottom: 0.15em;
+  position: absolute;
+  border-radius: 100%;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1000;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--color-red);
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 0px 2px 3px var(--color-black);
+}
+
+
+.PopUp{
+  position: fixed;
+
+  left: 28%;
+  top: 10%;
+
+  width: 40%;
+
+  border: 2px solid var(--color-black);
+  border-radius: 1em;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: #011627;
+  z-index: 2000;
+}
