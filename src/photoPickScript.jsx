@@ -76,7 +76,7 @@ export default function photoAssigner(){
         currentPos = mapUnpacker(filledPhotoMap.get(index))
         if (currentPos[0] == "true"){
             let tempArray = [];
-            let currentName = ('truePhotos[\'./assets/photos/truePhotos/' + currentPos[1] + '.png\'].default')
+            let currentName = ('truePhotos[\'./public/photos/truePhotos/' + currentPos[1] + '.png\'].default')
                 tempArray[0] = index;
                 tempArray[1] = currentName;
                 tempArray[2] = true;
@@ -84,7 +84,7 @@ export default function photoAssigner(){
             
         } else {
                 let tempArray = [];
-                let currentName = ('falsePhotos[\'./assets/photos/falsePhotos/' + currentPos[1] + '.jpg\'].default') /* need to add '' or "" in */
+                let currentName = ('falsePhotos[\'./public/photos/falsePhotos/' + currentPos[1] + '.jpg\'].default') /* need to add '' or "" in */
                 tempArray[0] = index;
                 tempArray[1] = currentName;
                 tempArray[2] = false;
