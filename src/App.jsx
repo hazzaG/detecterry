@@ -7,8 +7,8 @@ import photoAssigner from './photoPickScript.jsx';
 import { motion } from "motion/react"
 import { button, div, h1, tr } from 'motion/react-client';
 
-  const truePhotos = import.meta.glob(['./public/photos/truePhotos/*'], { eager: true });
-  const falsePhotos = import.meta.glob(['./public/photos/falsePhotos/*'], { eager: true });
+  const truePhotos = import.meta.glob(['../public/photos/truePhotos/*'], { eager: true });
+  const falsePhotos = import.meta.glob(['../public/photos/falsePhotos/*'], { eager: true });
   const photoMatrix = photoAssigner();
   function buttonTruthAssign(){
     let buttonTruthMatirx = [];
